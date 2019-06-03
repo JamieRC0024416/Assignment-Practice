@@ -34,5 +34,22 @@ namespace Assignment_Practice
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
             }
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            //Calculate the area of a triangle
+            try
+            {
+                double Base, Height, Area;
+                Base = Convert.ToDouble(textBox3.Text);
+                Height = Convert.ToDouble(textBox4.Text);
+                Area = Base * Height / 2;
+                label6.Text = "area = " + Area;
+            }
+            catch
+            {
+                MessageBox.Show("Type in two numbers");
+            }
+        }
     }
 }
